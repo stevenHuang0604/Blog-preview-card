@@ -1,0 +1,128 @@
+:root {
+  --color-primary: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color--grey: hsl(0, 0%, 50%);
+  --color--black: hsl(0, 0%, 7%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-primary);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 38.4rem;
+  background-color: var(--color-white);
+  padding: 2.4rem;
+  border: 1px solid var(--color--black);
+  border-radius: 2rem;
+  box-shadow: 0.8rem 0.8rem 0 0 var(--color--black);
+  margin: 22rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 32.7rem;
+  }
+}
+
+.card__img {
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.card__preview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.preview__subheading {
+  align-self: start;
+  font-size: 1.4rem;
+  font-weight: 800;
+  background-color: var(--color-primary);
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+@media screen and (max-width: 400px) {
+  .preview__subheading {
+    font-size: 1.2rem;
+  }
+}
+
+.preview__date {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 400px) {
+  .preview__date {
+    font-size: 1.2rem;
+  }
+}
+
+.preview__heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 400px) {
+  .preview__heading {
+    font-size: 2rem;
+  }
+}
+
+.preview__heading:hover,
+.preview__heading:active {
+  color: var(--color-primary);
+}
+
+.preview__description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color--grey);
+}
+
+@media screen and (max-width: 400px) {
+  .preview__description {
+    font-size: 1.4rem;
+  }
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.card__author-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
