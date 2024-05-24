@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/stevenHuang0604/Blog-preview-card)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://blog-preview-card-stevenhuang.netlify.app/)
 
 ## My process
 
